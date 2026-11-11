@@ -18,10 +18,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
-@Service
 @Slf4j
 @Data
 @Builder
+@Service
 public class ExperienciasService {
 
     private final ExperienciasRepository repository;

@@ -1,6 +1,5 @@
 package app.gabiporelnorte.gabiporelnorte.bussiness.experiencias.dto;
 
-import java.sql.Blob;
 import java.util.List;
 import java.util.UUID;
 

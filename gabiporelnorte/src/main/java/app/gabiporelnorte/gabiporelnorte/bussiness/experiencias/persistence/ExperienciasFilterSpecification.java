@@ -26,11 +26,9 @@ public class ExperienciasFilterSpecification {
     private Set<UUID> idIn;
     private String tituloLike;
     private String resumenLike;
-    private String descripcionLike;
     private String localizacionLike;
     private Double eqPrecio;
     private Integer eqDuracion;
-    private String urlLike;
     private List<String> etiquetasLike;
     private Boolean isActiva;
 
@@ -38,11 +36,9 @@ public class ExperienciasFilterSpecification {
         return Specification.where(in(Experiencias_.id, idIn))
                 .and(like(Experiencias_.titulo, tituloLike))
                 .and(like(Experiencias_.resumen, resumenLike))
-                .and(like(Experiencias_.descripcion, descripcionLike))
                 .and(like(Experiencias_.localizacion, localizacionLike))
                 .and(isEqual(Experiencias_.precio, eqPrecio))
                 .and(isEqual(Experiencias_.duracion, eqDuracion))
-                .and(like(Experiencias_.url, urlLike))
                 .and(tieneEtiquetas(etiquetasLike))
                 .and(isEqual(Experiencias_.activa, isActiva))
                 .toPredicate(root, query, criteriaBuilder);

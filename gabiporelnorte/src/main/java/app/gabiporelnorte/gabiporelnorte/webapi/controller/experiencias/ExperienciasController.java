@@ -24,9 +24,9 @@ import app.gabiporelnorte.gabiporelnorte.webapi.controller.experiencias.response
 import lombok.Builder;
 import lombok.Data;
 
-@RequestMapping("/webapi/experiencias")
 @Data 
 @Builder 
+@RequestMapping("/webapi/experiencias")
 public class ExperienciasController {
 
     private final ExperienciasService experienciasService;
